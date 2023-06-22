@@ -35,6 +35,7 @@ async function makeRequests() {
         console.log('fetch 전');
         const response1 = await fetch('https://jsonplaceholder.typicode.com/todos/1');
         const json1 = await response1.json();
+        console.log('fetch 후');
         console.log('json1 전');
         console.log(json1);
         console.log('json1 후');
@@ -44,9 +45,10 @@ async function makeRequests() {
         console.log('작업 끝');
     }
 }
-console.log('before abc');
+
+console.log('before function');
 makeRequests();
-console.log('after abc');
+console.log('after function');
 
 // var obj = {
 //     vals: [1, 2, 3],
